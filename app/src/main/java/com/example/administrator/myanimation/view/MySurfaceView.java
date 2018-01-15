@@ -73,6 +73,10 @@ public class MySurfaceView extends SurfaceView implements SurfaceHolder.Callback
         // 锁定画布
         canvas = getHolder().lockCanvas();
         // 绘制图形
+        if (canvas ==null) {
+            stopTimer();
+            return;
+        }
         canvas.drawColor(Color.TRANSPARENT, PorterDuff.Mode.CLEAR);// 初始化画布
 //            bolls=new Bolls(this);
 //        canvas.drawCircle(bolls.getCx() , bolls.getCy() , bolls.getRadius(), paint);

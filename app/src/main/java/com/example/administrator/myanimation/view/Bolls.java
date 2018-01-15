@@ -21,10 +21,6 @@ public class Bolls {
 
     public Bolls(MySurfaceView view, float x, float y, int type, int width, int height) {
         this.view = view;
-//        cx=(float) (Math.random()*view.getWidth());
-//        cy=(float) (Math.random()*view.getHeight());
-//        cx = 500;
-//        cy = 500;
 
         this.cx = x;
         this.cy = y;
@@ -66,63 +62,6 @@ public class Bolls {
         int s = 1;
         int r = 260;
         switch (type) {
-//            case 1:
-//                changePointSize(radius);
-//
-//                if (cx - width <= r && height - cy <= r) {
-//                    cx = -1;
-//                    cy = -1;
-//                } else if (cx >= 0 && cy >= 0) {
-//                    if (rate > 4) {
-//                        cx -= s;
-//                        cy += rate * s;
-//                    } else if (rate < 4 && rate > 0.5) {
-//                        cx -= 2 * s;
-//                        cy += 2 * rate * s;
-//                    } else {
-//                        cx -= rate * s;
-//                        cy += s;
-//                    }
-//                }
-//                break;
-//            case 2:
-//                changePointSize(radius);
-//                if (width - cx <= r && height - cy <= r) {
-//                    cx = -1;
-//                    cy = -1;
-//                } else if (cx >= 0 && cy >= 0) {
-//                    if (rate > 4) {
-//                        cx += s;
-//                        cy += rate * s;
-//                    } else if (rate < 4 && rate > 0.5) {
-//                        cx += 2 * s;
-//                        cy += 2 * rate * s;
-//                    } else {
-//                        cx += rate * s;
-//                        cy += s;
-//                    }
-//                }
-//                break;
-//
-//            case 3:
-//                changePointSize(radius);
-//
-//                if (width - cx <= r && cy - height <= r) {
-//                    cx = -1;
-//                    cy = -1;
-//                } else if (cx >= 0 && cy >= 0) {
-//                    if (rate > 4) {
-//                        cx += s;
-//                        cy -= rate * s;
-//                    } else if (rate < 4 && rate > 0.5) {
-//                        cx += 2 * s;
-//                        cy -= 2 * rate * s;
-//                    } else {
-//                        cx += rate * s;
-//                        cy -= s;
-//                    }
-//                }
-//                break;
             case 1:
                 changePointSize(radius);
 
@@ -212,31 +151,7 @@ public class Bolls {
                 cx = -1;
                 cy = -1;
                 break;
-
-
         }
-
-//        if (cx == view.getWidth() / 2 || cy == view.getHeight() / 2) {
-//            cx = 0;
-//            cy = 0;
-//        } else {
-//            cx += 10;
-//            cy += 12;
-//        }
-//        cx += 10;
-//        cy += 12;
-//        if (cx < radius) {
-//            addx = Math.abs(addx);
-//        }
-//        if (cx > view.getWidth() - radius) {
-//            addx = -Math.abs(addx);
-//        }
-//        if (cy < radius) {
-//            addy = Math.abs(addy);
-//        }
-//        if (cy > view.getHeight() -radius) {
-//            addy = -Math.abs(addy);
-//        }
     }
 
     private void changePointSize(float size) {

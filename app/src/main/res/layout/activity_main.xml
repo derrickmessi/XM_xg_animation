@@ -5,28 +5,28 @@
     android:id="@+id/rl_main">
 
 
-    <TextView
+    <View
         android:id="@+id/tv_1"
         android:layout_width="180dp"
         android:layout_height="180dp"
         android:layout_centerInParent="true"
         android:background="@drawable/oval_shape" />
 
-    <TextView
+    <View
         android:id="@+id/tv_2"
         android:layout_width="180dp"
         android:layout_height="180dp"
         android:layout_centerInParent="true"
         android:background="@drawable/oval_shape" />
 
-    <TextView
+    <View
         android:id="@+id/tv_4"
         android:layout_width="180dp"
         android:layout_height="180dp"
         android:layout_centerInParent="true"
         android:background="@drawable/oval_shape" />
 
-    <TextView
+    <View
         android:id="@+id/tv_3"
         android:layout_width="180dp"
         android:layout_height="180dp"
@@ -34,18 +34,25 @@
         android:background="@drawable/oval_shape_2" />
 
 
-    <TextView
+    <View
         android:id="@+id/tv"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_centerInParent="true"
         android:background="@drawable/oval_shape_1" />
-    <TextView
+    <View
         android:id="@+id/tv_test"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:maxLines="50"
         android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"/>
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="second"
+        android:id="@+id/btn_skip"
         android:layout_alignParentBottom="true"/>
 
 
